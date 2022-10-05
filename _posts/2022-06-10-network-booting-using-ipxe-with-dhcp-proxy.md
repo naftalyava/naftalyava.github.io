@@ -5,8 +5,11 @@ In this short post I am going to explain how to setup an iPXE server with a DHCP
 I will start with providing the setup instructions. The second part of the post will be relevant in case you will want to understand a bit more how it all works.
 1.	Install dnsmasq:
     > sudo apt-get install dnsmasq
+
 2.	Get ipxe from https://ipxe.org/download , you can get the source code and compiler yourself or download precompiled binaries. You can also download all the files needed from link at the end of this post. The file you will need from this step is ipxe.efi, it needs to be placed in the root folder of your tftp server.
+
 3.	Download Ubuntu Live 22.04 ISO, from www.ubuntu.com and from the iso image retrieve /casper/initrd and /casper/vmlinuz files. Create folder "casper" at the root folder of your tftp server, and copy both of these files there.
+
 4.	You also should create grub/grub.cfg configuration file under your root tftp folder. This file is defines the boot menu you see once your iPXE client boots. Below is an example where we use our iPXE server to boot a Ubuntu ISO image from Ubuntu web servers:
   	```
     menuentry "Install Ubuntu 22.04 (Pull the iso from web)" {
@@ -16,6 +19,7 @@ I will start with providing the setup instructions. The second part of the post 
     }
 
     ```
+
 
     Assuming the root folder of your tftp server is /tftpboot, the folder structure should look like this:
     ```
@@ -28,6 +32,7 @@ I will start with providing the setup instructions. The second part of the post 
         ├── grubnetx64.efi.signed
         └── ipxe.efi
     ```
+
 5.  Configure dnsmasq, to enable DHCP proxy, TFTP server and all required configurations on how to recognize clients and provide them with needed boot files.
     Here is an example configuration [/etc/dnsmasq.conf], edit it per your environment and needs:
     ```
