@@ -13,12 +13,11 @@ I will start with providing the setup instructions. The second part of the post 
 4.	You also should create grub/grub.cfg configuration file under your root tftp folder. This file is defines the boot menu you see once your iPXE client boots. Below is an example where we use our iPXE server to boot a Ubuntu ISO image from Ubuntu web servers:
 
   	```
-    menuentry "Install Ubuntu 22.04 (Pull the iso from web)" {
-       set gfxpayload=keep
-       linux   /casper/vmlinuz url=https://releases.ubuntu.com/jammy/ubuntu-22.04.1-desktop-amd64.iso only-ubiquity ip=dhcp ---
-       initrd  /casper/initrd
-    }
-
+        menuentry "Install Ubuntu 22.04 (Pull the iso from web)" {
+           set gfxpayload=keep
+           linux   /casper/vmlinuz url=https://releases.ubuntu.com/jammy/ubuntu-22.04.1-desktop-amd64.iso only-ubiquity ip=dhcp ---
+           initrd  /casper/initrd
+        }
     ```
 
 
