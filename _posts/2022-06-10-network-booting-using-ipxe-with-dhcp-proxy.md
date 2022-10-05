@@ -80,6 +80,6 @@ I will start with providing the setup instructions. The second part of the post 
     
 
 If all goes well, you should see the following menu once you boot a pxe capable client:
-![grub menu](/2022-06-10-network-booting-using-ipxe-with-dhcp-proxy/ipxe_boot_menu.png)
+![grub menu](/assets/2022-06-10-network-booting-using-ipxe-with-dhcp-proxy/ipxe_boot_menu.png)
     
     
