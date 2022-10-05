@@ -11,6 +11,7 @@ I will start with providing the setup instructions. The second part of the post 
 3.	Download Ubuntu Live 22.04 ISO, from www.ubuntu.com and from the iso image retrieve /casper/initrd and /casper/vmlinuz files. Create folder "casper" at the root folder of your tftp server, and copy both of these files there.
 
 4.	You also should create grub/grub.cfg configuration file under your root tftp folder. This file is defines the boot menu you see once your iPXE client boots. Below is an example where we use our iPXE server to boot a Ubuntu ISO image from Ubuntu web servers:
+
   	```
     menuentry "Install Ubuntu 22.04 (Pull the iso from web)" {
        set gfxpayload=keep
@@ -21,7 +22,9 @@ I will start with providing the setup instructions. The second part of the post 
     ```
 
 
-    Assuming the root folder of your tftp server is /tftpboot, the folder structure should look like this:
+  Assuming the root folder of your tftp server is /tftpboot, the folder structure should look like this:
+
+
     ```
         /tftpboot/
         ├── casper
@@ -32,6 +35,7 @@ I will start with providing the setup instructions. The second part of the post 
         ├── grubnetx64.efi.signed
         └── ipxe.efi
     ```
+    
 
 5.  Configure dnsmasq, to enable DHCP proxy, TFTP server and all required configurations on how to recognize clients and provide them with needed boot files.
     Here is an example configuration [/etc/dnsmasq.conf], edit it per your environment and needs:
