@@ -21,8 +21,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:naftaly.avadiaev@gmail.com"}
-  - {title: Github, icon: github, url: "https://github.com/naftalyava"}
-  - {title: Linkdin, icon: linkedin, url: "https://www.linkedin.com/in/naftalyavadiaev"}
+  - {title: Github, icon: github, url: "www.github.com/naftalyava"}
+  - {title: Linkdin, icon: linkedin, url: "www.linkedin.com/in/naftalyavadiaev"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
