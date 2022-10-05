@@ -2,7 +2,8 @@
 
 In this short post I am going to explain how to setup an iPXE server with a DHCP proxy, meaning you will not need to configure anything on the existing DHCP server you have on the network. This comes especially handy when you can't control/modify the existing DHCP server.
 
-I will start with providing the setup instructions. The second part of the post will be relevant in case you will want to understand a bit more how it all works.
+Lets dive into the setup instructions. In case you will want to understand a bit more how it all works, I will be uploading a youtube video which explains the configuration provided in this post.
+
 1.	Install dnsmasq:
     > sudo apt-get install dnsmasq
 
