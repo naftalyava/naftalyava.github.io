@@ -10,7 +10,7 @@ Lets dive into the setup instructions. In case you will want to understand a bit
 1.	Install dnsmasq:
     > sudo apt-get install dnsmasq
 
-2.	Get ipxe from https://ipxe.org/download , you can get the source code and compiler yourself or download precompiled binaries. You can also download all the files needed from link at the end of this post. The file you will need from this step is ipxe.efi, it needs to be placed in the root folder of your tftp server.
+2.	Get ipxe from https://ipxe.org/download, you can get the source code and compile yourself or just download the precompiled binaries. You can also download all the files needed from link at the end of this post. The file you will need from this step is ipxe.efi, it needs to be placed in the root folder of your tftp server.
 
 3.	Download Ubuntu Live 22.04 ISO, from www.ubuntu.com and from the iso image retrieve /casper/initrd and /casper/vmlinuz files. Create folder "casper" at the root folder of your tftp server, and copy both of these files there.
 
@@ -86,6 +86,11 @@ Lets dive into the setup instructions. In case you will want to understand a bit
 If all goes well, you should see the following menu once you boot a pxe capable client:
 
 ![grub menu](/assets/2022-06-10-network-booting-using-ipxe-with-dhcp-proxy/ipxe_boot_menu.png)
+
+
+Below is the video with more in depth explanations.
+
+<iframe width="1227" height="690" src="https://www.youtube.com/embed/cc4Hb6dpbs8" title="Network Booting Using iPXE With DHCP Proxy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
     
