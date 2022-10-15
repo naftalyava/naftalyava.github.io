@@ -11,7 +11,7 @@ Below are the required configuration steps:
 1.  On you Windows machine, generate SSH key pair. Open PowerShell and run the following command:
     > ssh-keygen -b 4096
     
-    By default this will generate two keys under "c:/Users/<user name>/.ssh/"
+    By default this will generate two keys under `c:/Users/<user name>/.ssh/`
     Copy the public key [content of id_rsa.pub].
 
 2.	On your Linux machine, run the following command to create authorized_keys file:
