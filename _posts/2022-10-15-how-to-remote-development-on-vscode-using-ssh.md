@@ -18,10 +18,10 @@ Below are the required configuration steps:
     > vim ~/.ssh/authorized_keys
     Paste the public key from earlier step.
     
-3.  Install `Remote - SSH` plugin for VSCode.
+3.  Install `Remote SSH` plugin for VSCode.
     ![Remote SSH Plugin](/assets/2022-15-10-how-to-remote-development-on-vscode-using-ssh/remote_ssh_plugin.png)
 
-4.  To configure the plugin, click `ctrl + shift + p` and type `ssh config`. Open the configuration file and fill it with the following [adjusted with your IP addresses and etc]:
+4.  To configure the plugin, click `ctrl + shift + p` and type `ssh config`.  Open the configuration file and fill it with the following [adjusted with your IP addresses and etc]:
     ```
     Host 192.168.1.10
       HostName 192.168.1.10
@@ -31,7 +31,7 @@ Below are the required configuration steps:
       IdentityFile "C:\Users\nafta\.ssh\id_rsa"
     ```
     
-5.  Click `ctrl + shift + p` again and type `connect to host`.
+5.  Click `ctrl + shift + p` again and type `connect to host`. 
     You should be able to select the host you just configured and login.
     
 
