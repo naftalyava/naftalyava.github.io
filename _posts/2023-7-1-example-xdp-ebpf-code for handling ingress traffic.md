@@ -124,3 +124,6 @@ err = bpf_map__update_elem(map_hash, &ip_server, sizeof(uint32_t), &ip_server, s
 ```
 
 The complete code can be found [here](https://github.com/naftalyava/ebpf_and_xdp_examples/tree/main/block_ping).
+
+I also record a video where I explain the code in more detail:
+<iframe width="368" height="207" src="https://youtu.be/clfDULDFeis" title="Exploring eBPF and XDP: An Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
