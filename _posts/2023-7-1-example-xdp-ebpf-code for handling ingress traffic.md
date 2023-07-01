@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Exploring eBPF and XDP: A Practical Walkthrough"
+title: "Exploring eBPF and XDP: An Example"
 date: 2023-07-01
 ---
 
