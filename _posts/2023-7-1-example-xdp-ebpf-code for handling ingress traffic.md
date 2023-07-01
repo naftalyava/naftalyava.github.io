@@ -12,11 +12,11 @@ Although I initially considered utilizing these technologies to accelerate Kuber
 
 Fast forward to today, I decided to spend a weekend building a functional example that uses most of the basic building blocks of eBPF and XDP.
 
-## The Logic
+## What the code does?
 - User-space configures IP addresses to which the `ping` command should be blocked; this configuration can be adjusted on the fly.
 - User-space gets notified once ICMP traffic hits the NIC.
 
-## The Approach
+## How?
 1. Utilize libbpf to abstract away many of the repeating eBPF boilerplate code, simplifying the process of writing, loading, and managing the eBPF program.
 2. Establish communication between the user-space code and the eBPF program.
 3. Utilize an eBPF ring buffer for communication where the XDP will be the initiator.
