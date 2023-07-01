@@ -4,11 +4,11 @@ title: "Exploring eBPF and XDP: An Example"
 date: 2023-07-01
 ---
 
-A year ago, I was exploring a few Kubernetes CNI plugins when I stumbled upon the intriguing Cilium project. Cilium uses **eBPF** and **XDP** for network traffic control, security, and visibility.
+A year ago, I was exploring a few Kubernetes CNI plugins when I stumbled upon the Cilium project. Cilium uses **eBPF** and **XDP** for network traffic control, security, and visibility.
 
-*eBPF* (Extended Berkeley Packet Filter) allows you to attach your code on the fly to almost any function within the Linux kernel. *XDP* (Xpress DataPath), on the other hand, enables manipulation of network traffic even before it reaches the network stack of the Linux kernel. Essentially, eBPF and XDP let you dynamically add logic to network traffic control while bypassing the kernel potentially giving you better performance.
+*eBPF* (Extended Berkeley Packet Filter) allows you to attach your code on the fly to almost any function within the Linux kernel. *XDP* (Xpress DataPath), on the other hand, enables manipulation of network traffic even before it reaches the network stack of the Linux kernel. Essentially, eBPF and XDP let you dynamically add logic to network traffic control while bypassing the kernel network stack potentially giving you better performance.
 
-Although I initially considered utilizing these technologies to accelerate Kubernetes workloads using a DPU, a type of smart NIC, I eventually pursued a different direction. However, the concepts of eBPF and XDP piqued my interest and stuck with me.
+Although I initially considered utilizing these technologies to accelerate Kubernetes workloads using a DPU, a type of smart NIC, eventually I scrapped this XDP offload idea and went in a different direction, but the technology remained stuck in my head since then.
 
 Fast forward to today, I decided to spend a weekend building a functional example that uses most of the basic building blocks of eBPF and XDP.
 
