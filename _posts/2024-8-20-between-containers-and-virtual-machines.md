@@ -57,7 +57,7 @@ Traditional containers, with their reliance on kernel namespaces, bring unparall
 
 The below diagram demonstrates the difference between VM, Kata Containers, and conventional containers.
 
-![Kata Containers Architecture](assets/2024-8-20-between-containers-and-virtual-machines/kata_containers_architecture.jpg)
+![Kata Containers Architecture]({{ "/assets/2024-8-20-between-containers-and-virtual-machines/kata_containers_architecture.jpg" | relative_url }})
 
 
 ## Kata Containers in Action
