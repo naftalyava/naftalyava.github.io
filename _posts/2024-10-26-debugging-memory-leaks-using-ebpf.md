@@ -1,9 +1,8 @@
-
 ---
+layout: post
 title: "Debugging Memory Leaks with eBPF"
 date: 2024-10-26
-categories: [eBPF, Debugging, Memory Leaks]
-tags: [eBPF, uprobes, Linux, memory management, debugging]
+categories: eBPF
 ---
 
 # Debugging Memory Leaks with eBPF
