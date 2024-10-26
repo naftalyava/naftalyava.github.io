@@ -431,7 +431,7 @@ Our Go program takes in a few command-line arguments:
 To start the memory leak detector, run the following command, replacing `<TARGET_PID>` with the PID of the process you want to trace:
 
 ```bash
-go run main.go -pid <TARGET_PID> -output leaks.txt
+sudo ./leak_detector -pid <TARGET_PID> -output leaks.txt
 ```
 
 This command initializes the memory leak detector, attaches the probes to the target process, and begins monitoring `malloc` and `free` calls. The program will periodically log any potential memory leaks to the specified output file.
