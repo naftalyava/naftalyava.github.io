@@ -27,9 +27,6 @@ Before diving into the code, let’s go over some essential concepts to understa
 #### **uprobes**
 **`uprobes`** (user-space probes) allow us to dynamically attach to specific functions within user-space binaries, such as `malloc` and `free` in `libc`. By doing so, we can monitor each time these functions are called, making it possible to track memory allocations and deallocations accurately. The key advantage of `uprobes` is that they don’t require any modification to the target application’s code or recompilation, making them ideal for real-time debugging.
 
-#### **eBPF**
-**eBPF** (extended Berkeley Packet Filter) is a Linux kernel technology that enables efficient, safe execution of user-defined programs within the kernel. Originally created for network packet filtering, eBPF has evolved into a versatile tool for tracing, profiling, and monitoring system activity. By using eBPF, we can gather detailed data on system and user-space events (via `uprobes`) with minimal performance overhead, making it an excellent choice for memory leak detection.
-
 ---
 
 ## 3. eBPF and Uprobes: The Foundation for User-Space Tracing
